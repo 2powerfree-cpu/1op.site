@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Download</title>
+    <title>File Download Center</title>
     <style>
         body {
             margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif;
@@ -14,44 +14,37 @@
             background: rgba(255, 255, 255, 0.1); padding: 50px;
             border-radius: 15px; backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2); text-align: center;
+            max-width: 400px; width: 90%;
         }
+        .loading-spinner {
+            border: 4px solid rgba(255,255,255,0.1);
+            border-left-color: #00c6ff;
+            border-radius: 50%; width: 40px; height: 40px;
+            animation: spin 1s linear infinite; margin: 20px auto;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        
         .download-btn {
-            background: linear-gradient(45deg, #00c6ff, #0072ff);
-            color: white; border: none; padding: 18px 45px;
-            font-size: 20px; font-weight: bold; border-radius: 50px;
-            cursor: pointer; text-transform: uppercase;
-            transition: 0.3s; display: inline-block;
+            background: #333; color: #777; border: none; padding: 15px 40px;
+            font-size: 18px; font-weight: bold; border-radius: 50px;
+            cursor: not-allowed; text-transform: uppercase;
         }
-        .download-btn:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Your File is Ready</h1>
-        <p>Click the button below to start the verification process.</p>
+        <h1>Link is Loading...</h1>
+        <div class="loading-spinner"></div>
+        <p>Please wait while we verify your connection and prepare the file.</p>
         
-        <button class="download-btn" onclick="openLocker()">Download Now</button>
+        <button class="download-btn">Please Wait...</button>
     </div>
 
     <script type="text/javascript">
         var adcTT_bUr_clWLNc={"it":4143249,"key":"0a752"};
     </script>
     <script src="https://duw03nk63ml3f.cloudfront.net/49449d0.js"></script>
-
-    <script type="text/javascript">
-        function openLocker() {
-            // استدعاء الوظيفة التي أنشأها السكربت الخاص بك تلقائياً
-            if (typeof _clWLNc === 'function') {
-                _clWLNc();
-            } else if (typeof call_locker === 'function') {
-                call_locker();
-            } else {
-                // في حال لم يكتمل تحميل السكربت بعد
-                alert("Please wait a moment while the server prepares the link...");
-            }
-        }
-    </script>
 
 </body>
 </html>
