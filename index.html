@@ -3,73 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Ready for Download</title>
+    <title>File Download</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
+            margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif;
+            background: #0f0c29; height: 100vh;
+            display: flex; justify-content: center; align-items: center; color: white;
         }
         .container {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 50px 30px;
-            border-radius: 15px;
-            backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
-            max-width: 450px;
-            width: 90%;
+            background: rgba(255, 255, 255, 0.1); padding: 50px;
+            border-radius: 15px; backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2); text-align: center;
         }
-        h1 { margin-bottom: 15px; font-size: 28px; color: #fff; }
-        p { color: #d1d1d1; margin-bottom: 35px; font-size: 16px; line-height: 1.5; }
-        
         .download-btn {
             background: linear-gradient(45deg, #00c6ff, #0072ff);
-            color: white;
-            border: none;
-            padding: 18px 45px;
-            font-size: 20px;
-            font-weight: bold;
-            border-radius: 50px;
-            cursor: pointer;
-            text-transform: uppercase;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-            box-shadow: 0 10px 20px rgba(0, 114, 255, 0.3);
+            color: white; border: none; padding: 18px 45px;
+            font-size: 20px; font-weight: bold; border-radius: 50px;
+            cursor: pointer; text-transform: uppercase;
+            transition: 0.3s; display: inline-block;
         }
-        .download-btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 114, 255, 0.5);
-            background: linear-gradient(45deg, #0072ff, #00c6ff);
-        }
-        .footer-text {
-            margin-top: 25px;
-            font-size: 12px;
-            color: #888;
-        }
+        .download-btn:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Link is Ready!</h1>
-        <p>Complete a quick verification to unlock your content and start your download immediately.</p>
+        <h1>Your File is Ready</h1>
+        <p>Click the button below to start the verification process.</p>
         
-        <a href="https://d1tjcziy9n8hnk.cloudfront.net/public/i_fr?it=4143249&key=0a752" class="download-btn">Download Now</a>
-        
-        <div class="footer-text">Secure & Encrypted Verification</div>
+        <button class="download-btn" onclick="openLocker()">Download Now</button>
     </div>
 
-    <script type="text/javascript"> var adcTT_bUr_clWLNc={"it":4143249,"key":"0a752"}; </script>
+    <script type="text/javascript">
+        var adcTT_bUr_clWLNc={"it":4143249,"key":"0a752"};
+    </script>
     <script src="https://duw03nk63ml3f.cloudfront.net/49449d0.js"></script>
+
+    <script type="text/javascript">
+        function openLocker() {
+            // استدعاء الوظيفة التي أنشأها السكربت الخاص بك تلقائياً
+            if (typeof _clWLNc === 'function') {
+                _clWLNc();
+            } else if (typeof call_locker === 'function') {
+                call_locker();
+            } else {
+                // في حال لم يكتمل تحميل السكربت بعد
+                alert("Please wait a moment while the server prepares the link...");
+            }
+        }
+    </script>
 
 </body>
 </html>
