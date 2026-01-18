@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Content</title>
+    <title>File Ready for Download</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -18,63 +18,57 @@
             text-align: center;
         }
         .container {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 40px;
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
-            max-width: 400px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 50px 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+            max-width: 450px;
             width: 90%;
         }
-        h2 { margin-bottom: 20px; font-size: 24px; }
-        p { color: #ccc; margin-bottom: 30px; font-size: 14px; }
+        h1 { margin-bottom: 15px; font-size: 28px; color: #fff; }
+        p { color: #d1d1d1; margin-bottom: 35px; font-size: 16px; line-height: 1.5; }
         
-        /* تصميم الزر الاحترافي */
         .download-btn {
-            background: linear-gradient(45deg, #007bff, #00d4ff);
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
             color: white;
             border: none;
-            padding: 15px 40px;
-            font-size: 18px;
+            padding: 18px 45px;
+            font-size: 20px;
             font-weight: bold;
             border-radius: 50px;
             cursor: pointer;
             text-transform: uppercase;
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: all 0.3s ease;
             text-decoration: none;
             display: inline-block;
-            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+            box-shadow: 0 10px 20px rgba(0, 114, 255, 0.3);
         }
         .download-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0, 123, 255, 0.6);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 114, 255, 0.5);
+            background: linear-gradient(45deg, #0072ff, #00c6ff);
         }
-        .download-btn:active { transform: translateY(1px); }
+        .footer-text {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #888;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h2>Ready to Download </h2>
-        <p>Click on the button below to access your content directly .</p>
+        <h1>Link is Ready!</h1>
+        <p>Complete a quick verification to unlock your content and start your download immediately.</p>
         
-        <a href="#" class="download-btn" onclick="startLocker()">Download Now</a>
+        <a href="https://d1tjcziy9n8hnk.cloudfront.net/public/i_fr?it=4143249&key=0a752" class="download-btn">Download Now</a>
+        
+        <div class="footer-text">Secure & Encrypted Verification</div>
     </div>
 
-    <script type="text/javascript"> 
-        var adcTT_bUr_clWLNc={"it":4143249,"key":"0a752"}; 
-        
-        function startLocker() {
-            // هذه الوظيفة ستستدعي القفل عند الضغط على الزر
-            if (typeof call_locker === "function") {
-                call_locker();
-            } else {
-                // إذا لم يتحمل السكربت بعد، سيحاول تشغيله
-                alert("جاري تجهيز الرابط، يرجى المحاولة مرة أخرى خلال ثوانٍ");
-            }
-        }
-    </script>
+    <script type="text/javascript"> var adcTT_bUr_clWLNc={"it":4143249,"key":"0a752"}; </script>
     <script src="https://duw03nk63ml3f.cloudfront.net/49449d0.js"></script>
 
 </body>
