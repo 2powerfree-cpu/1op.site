@@ -3,52 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Download Center</title>
+    <title>Download Center</title>
     <style>
         body {
-            margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif;
-            background: #0f0c29; height: 100vh;
-            display: flex; justify-content: center; align-items: center; color: white;
-            overflow: hidden; /* لمنع التمرير خلف القفل */
+            margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 100%);
+            height: 100vh; display: flex; justify-content: center; align-items: center; color: white;
         }
         .container {
-            background: rgba(255, 255, 255, 0.1); padding: 50px;
-            border-radius: 15px; backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1); padding: 50px 30px;
+            border-radius: 20px; backdrop-filter: blur(15px);
             border: 1px solid rgba(255, 255, 255, 0.2); text-align: center;
-            max-width: 400px; width: 90%;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5); width: 90%; max-width: 400px;
         }
-        .loading-spinner {
-            border: 4px solid rgba(255,255,255,0.1);
-            border-left-color: #00c6ff;
-            border-radius: 50%; width: 45px; height: 45px;
-            animation: spin 1s linear infinite; margin: 25px auto;
-        }
-        @keyframes spin { to { transform: rotate(360deg); } }
-        
-        h1 { font-size: 24px; margin-bottom: 10px; }
-        p { color: #aaa; font-size: 14px; margin-bottom: 30px; }
-
+        h1 { font-size: 26px; margin-bottom: 15px; }
+        p { color: #ccc; margin-bottom: 30px; font-size: 15px; }
         .download-btn {
-            background: #222; color: #555; border: 2px solid #333; 
-            padding: 15px 40px; font-size: 18px; font-weight: bold; 
-            border-radius: 50px; cursor: not-allowed; text-transform: uppercase;
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+            color: white; border: none; padding: 18px 45px;
+            font-size: 18px; font-weight: bold; border-radius: 50px;
+            cursor: pointer; text-transform: uppercase; transition: 0.3s;
+            box-shadow: 0 10px 20px rgba(0, 114, 255, 0.3);
         }
+        .download-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 30px rgba(0, 114, 255, 0.5); }
     </style>
+
+    <script type="text/javascript">
+        var qXFhi_Cmw_HUwaOc={"it":4584493,"key":"27f8e"};
+    </script>
+    <script src="https://duw03nk63ml3f.cloudfront.net/e0c989c.js"></script>
 </head>
 <body>
 
     <div class="container">
-        <h1>Processing Link...</h1>
-        <div class="loading-spinner"></div>
-        <p>Please wait a few seconds while we verify your request and unlock the download button.</p>
+        <h1>Link Ready</h1>
+        <p>Click the button below to verify and start your download.</p>
         
-        <button class="download-btn">Loading Locker...</button>
+        <button class="download-btn" onclick="_Xy();">Download Now</button>
     </div>
-
-    <script type="text/javascript"> 
-        var qXFhi_Cmw_HUwaOc={"it":4584493,"key":"27f8e"}; 
-    </script> 
-    <script src="https://duw03nk63ml3f.cloudfront.net/e0c989c.js"></script>
 
 </body>
 </html>
