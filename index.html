@@ -36,9 +36,8 @@
         .sub-note { font-size: 12px; color: #94a3b8; margin-top: 16px; margin-bottom: 0; }
     </style>
 
-    <!-- كود القفل الخاص بك -->
-    
-    <script src="https://apptrck.net/cl/i/ex1k8k"></script>
+    <!-- كود قفل OGAds الصحيح -->
+    <script type="text/javascript" id="ogjs" src="https://apptrck.net/cl/i/ex1k8k"></script>
 </head>
 <body>
 
@@ -47,16 +46,17 @@
         <h1>One Last Step Required</h1>
         <p>To prevent automated bots and secure your reserved spot, please complete <strong>1 quick partner step</strong> (takes 30 seconds) to unlock instant access.</p>
         
-        <button class="download-btn" onclick="ex1k8k">COMPLETE FINAL STEP →</button>
+        <!-- استدعاء دالة القفل الخاصة بـ OGAds -->
+        <button class="download-btn" onclick="call_locker();">COMPLETE FINAL STEP →</button>
         <p class="sub-note">If the verification window didn't open automatically, click the button above.</p>
     </div>
 
     <script>
-        // فتح القفل تلقائياً بعد نصف ثانية من تحميل الصفحة لتوفير ضغطة على الزائر
+        // فتح القفل تلقائياً بعد نصف ثانية من دخول الصفحة
         window.addEventListener('load', function() {
             setTimeout(function() {
-                if (typeof _Xy === 'function') {
-                    _Xy();
+                if (typeof call_locker === 'function') {
+                    call_locker();
                 }
             }, 600);
         });
